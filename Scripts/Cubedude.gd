@@ -46,3 +46,7 @@ func play_animation():
 func look_forward():
 	if not movement.x == 0 or not movement.z == 0:
 		look_at((Vector3(-movement.x, 0, -movement.z) * speed), UP)
+		
+func resetPosition():
+	# Reset player position to spawn point
+	pass;

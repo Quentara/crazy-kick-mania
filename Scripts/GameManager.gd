@@ -17,6 +17,9 @@ func _on_Timer_timeout():
 	reset_game()
 	
 func reset_game():
+	# TODO Refactor this block into a function inside the ball script
 	$ball.axis_lock_linear_x = false
 	$ball.axis_lock_linear_z = false
 	$ball.translation = $SpawnPoints/BallSpawnPoint.translation
+	
+	# TODO Insert reset function for players
